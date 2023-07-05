@@ -1,8 +1,29 @@
 {
-  "culture": "en",
-  "texts": {
+  "Culture": "en",
+  "Texts": {
     "Menu:Home": "Home",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:TutuApp": "Tutu App",
+    "Menu:Servicios": "Servicios",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "PublishDate": "Publish date",
+    "NewServicio": "New Servicio",
+    "Name": "Name",
+    "Type": "Type",
+    "Price": "Price",
+    "CreationTime": "Creation time",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "Enum:TipoDeServicio.0": "Undefined",
+    "Enum:TipoDeServicio.1": "Estetica",
+    "Enum:TipoDeServicio.2": "Salud",
+    "Enum:TipoDeServicio.3": "Consultoria",
+    "Enum:TipoDeServicio.4": "SoporteTécnico",
+    "Enum:TipoDeServicio.5": "Mantenimiento",
+    "Enum:TipoDeServicio.6": "Entrenamiento"
   }
 }
