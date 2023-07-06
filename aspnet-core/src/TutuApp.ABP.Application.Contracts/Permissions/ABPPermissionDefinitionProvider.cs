@@ -8,9 +8,12 @@ public class ABPPermissionDefinitionProvider : PermissionDefinitionProvider
 {
     public override void Define(IPermissionDefinitionContext context)
     {
-        var myGroup = context.AddGroup(ABPPermissions.GroupName);
-        //Define your own permissions here. Example:
-        //myGroup.AddPermission(ABPPermissions.MyPermission1, L("Permission:MyPermission1"));
+        var ServicioStoreGroup = context.AddGroup(ABPPermissions.GroupName, L("Permission:ServiciosStore"));
+
+        var ServiciosPermission = ServicioStoreGroup.AddPermission(ABPPermissions.Servicios.Default, L("Permission:Servicios"));
+        ServiciosPermission.AddChild(ABPPermissions.Servicios.Create, L("Permission:Servicios.Create"));
+        ServiciosPermission.AddChild(ABPPermissions.Servicios.Edit, L("Permission:Servicios.Edit"));
+        ServiciosPermission.AddChild(ABPPermissions.Servicios.Delete, L("Permission:Servicios.Delete"));
     }
 
     private static LocalizableString L(string name)

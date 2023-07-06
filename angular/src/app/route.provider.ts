@@ -15,6 +15,20 @@ function configureRoutes(routesService: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/servicio-store',
+        name: '::Menu:TutuApp',
+        iconClass: 'fas fa-user-clock',
+        order: 2,
+        layout: eLayoutType.application,
+      },
+      {
+        path: '/servicios',
+        name: '::Menu:Servicios',
+        iconClass: 'fas fa-fire',
+        parentName: '::Menu:TutuApp',
+        layout: eLayoutType.application,
+      },
     ]);
   };
 }

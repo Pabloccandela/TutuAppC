@@ -4,6 +4,11 @@ public static class ABPPermissions
 {
     public const string GroupName = "ABP";
 
-    //Add your own permission names. Example:
-    //public const string MyPermission1 = GroupName + ".MyPermission1";
+    public static class Servicios
+    {
+        public const string Default = GroupName + ".Servicios";
+        public const string Create = Default + ".Create";
+        public const string Edit = Default + ".Edit";
+        public const string Delete = Default + ".Delete";
+    }
 }
